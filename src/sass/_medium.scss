@@ -1,0 +1,186 @@
+@use 'colors' as *;
+
+@media (max-width: 768px) {
+	.navbar__btn {
+		display: block;
+	}
+	.navbar__btn.active {
+		display: block;
+		.navbar__btn-bar:nth-child(2) {
+			opacity: 0;
+		}
+		.navbar__btn-bar:nth-child(1) {
+			transform: translateY(8px) rotate(45deg);
+		}
+		.navbar__btn-bar:nth-child(3) {
+			transform: translateY(-8px) rotate(-45deg);
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar {
+		&__btn {
+			display: none;
+		}
+		&__list {
+			position: static;
+			flex-direction: row;
+			transform: translateX(0);
+			height: 100px;
+			width: auto;
+			background-color: $white;
+			opacity: 1;
+			&-item {
+				padding: 0;
+				font-size: 1.8rem;
+				cursor: pointer;
+				transition: background-color 0.3s;
+				a {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					height: 100px;
+					width: 120px;
+					transition: color 0.3s;
+				}
+			}
+			&-item:hover {
+				background-color: $black;
+				a {
+					color: $white;
+				}
+			}
+			&-item.active {
+				background-color: $black;
+				a {
+					color: $white;
+				}
+			}
+		}
+		&__logo {
+			font-size: 3.4rem;
+		}
+	}
+	.header {
+		background-image: url('../img/forest-desktop.jpg');
+		height: 400px;
+		justify-content: center;
+		align-items: center;
+
+		&__company-name {
+			margin-top: 0;
+			font-size: 2.4rem;
+		}
+		&__title {
+			font-size: 3.2rem;
+		}
+	}
+
+	.aboutus {
+		&__box {
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 2em;
+			&-text {
+				font-size: 1.5rem;
+			}
+		}
+		&__img {
+			width: 50%;
+			max-height: none;
+		}
+	}
+
+	.adventure {
+		background-image: url('../img/girl-desktop.jpg');
+		&__title {
+			font-size: 3.2rem;
+		}
+	}
+
+	.offers {
+		&__card {
+			max-width: 335px;
+		}
+	}
+
+	.footer {
+		&__body {
+			justify-content: space-evenly;
+			h2 {
+				font-size: 2rem;
+			}
+		}
+		&__logo {
+			width: auto;
+			order: 0;
+			&-name {
+				font-size: 4rem;
+			}
+		}
+		&__content {
+			flex-direction: row;
+			padding-left: 0;
+			width: auto;
+		}
+		&__company {
+			margin: 0 1em;
+		}
+	}
+
+	.contact {
+		&__input,
+		&__textarea {
+			width: 60%;
+		}
+
+		&__btn {
+			width: 30%;
+		}
+		&__info-box {
+			position: relative;
+			width: 65%;
+		}
+
+		&__showcase {
+			position: absolute;
+			top: -70%;
+			right: -52%;
+			width: auto;
+			padding: 3em 0.5em;
+			p,
+			&-number {
+				padding: 1em 0;
+				font-size: 1.8rem;
+			}
+			h3 {
+				font-size: 2.6rem;
+			}
+		}
+		&__map {
+			.container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 2em;
+			}
+			iframe {
+				min-height: 40vh;
+				min-height: 400px;
+				width: 60%;
+			}
+			&-heading {
+				margin-bottom: 2em;
+				font-size: 3rem;
+			}
+		}
+	}
+	.offers-page {
+		background-image: url('../img/offers-page-desktop.jpg');
+		&__heading {
+			font-size: 2.6rem;
+		}
+	}
+}

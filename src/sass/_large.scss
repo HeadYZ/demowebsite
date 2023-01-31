@@ -1,0 +1,87 @@
+@media (min-width: 992px) {
+
+	.navbar{
+		&__logo {
+			font-size: 4rem;
+		}
+	}
+	.header {
+		font-weight: 300;
+		&__company-name {
+			font-size: 2.8rem;
+		}
+		&__title {
+			font-size: 4rem;
+		}
+	}
+
+	.aboutus {
+		&__title {
+			font-size: 4rem;
+		}
+		&__box {
+			&-heading {
+				font-size: 2.6rem;
+			}
+			&-text {
+				font-size: 1.8rem;
+			}
+		}
+	}
+	.adventure {
+		&__title {
+			font-size: 4rem;
+			padding: 1em 4em;
+		}
+	}
+
+	.offers {
+		&__card {
+			width: 25%;
+			margin: 0;
+		}
+		&__box {
+			justify-content: space-evenly;
+		}
+		&__card-option {
+			width: 90%;
+			gap: 1em;
+		}
+	}
+	.contact {
+		&__input,
+		&__textarea {
+			width: 50%;
+			font-size: 1.6rem;
+		}
+		&__textarea {
+			resize: vertical;
+			min-height: 120px;
+			max-height: 300px;
+		}
+		&__info-box {
+			min-height: 313px;
+		}
+		&__showcase {
+			p,
+			&-number {
+				padding: 1em 0;
+				font-size: 1.8rem;
+			}
+			h3 {
+				font-size: 2.6rem;
+			}
+		}
+		&__showcase {
+			position: absolute;
+			top: -60%;
+			right: -52%;
+			padding: 3em;
+		}
+	}
+	.offers-page {
+		&__heading{
+			font-size: 3.2rem;
+		}
+	}
+}
