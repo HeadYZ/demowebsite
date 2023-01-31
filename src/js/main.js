@@ -1,10 +1,20 @@
+//nav
+
 const navBtn = document.querySelector('.navbar__btn')
 const navList = document.querySelector('.navbar__list')
 const body = document.querySelector('body')
 const navItems = document.querySelectorAll('.navbar__list-item')
 const allSections = document.querySelectorAll('section')
 
+
+
+
+//footer
+
 const footerDate = document.querySelector('.footer__date')
+
+
+
 
 window.onscroll = () => {
 	allSections.forEach(sec => {
@@ -39,6 +49,10 @@ const toggleNav = () => {
 		body.classList.remove('sticky-body')
 	}
 }
+
+navItems.forEach(item => {
+	item.addEventListener('click', toggleNav)
+})
 
 navBtn.addEventListener('click', toggleNav)
 yearUpdate()
