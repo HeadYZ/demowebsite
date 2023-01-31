@@ -27,7 +27,7 @@
 			position: static;
 			flex-direction: row;
 			transform: translateX(0);
-			height: 100px;
+			height: 80px;
 			width: auto;
 			background-color: $white;
 			opacity: 1;
@@ -40,7 +40,7 @@
 					display: flex;
 					align-items: center;
 					justify-content: center;
-					height: 100px;
+					height: 80px;
 					width: 120px;
 					transition: color 0.3s;
 				}
